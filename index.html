@@ -3,34 +3,36 @@
 <head>
     <meta>
     <title>My CV</title>
-    <style rel="stylesheet" src="style.css"></style>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" media="all" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-list">Contacts</a></li>
-                    <li class="nav-item"><a href="#" class="nav-list">Summary</a></li>
-                    <li class="nav-item"><a href="#" class="nav-list">Skills</a></li>
-                    <li class="nav-item"><a href="#" class="nav-list">Code</a></li>
-                    <li class="nav-item"><a href="#" class="nav-list">Courses</a></li>
-                    <li class="nav-item"><a href="#" class="nav-list">Projects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-list">Education</a></li>
-                    <li class="nav-item"><a href="#" class="nav-list">English</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">English</a></li>
                 </ul>
             </nav>   
         </div>
     </header>
-    <main>
+    <main class="main-container">
         <div class="container">
             <section class="section" id="profile">
                 <h1 class="section-title">Malkov Dima</h1>
             </section>
             <section class="section" id="contacts">
                 <h2 class="section-title">Contacts:</h2>
-                <ul>
+                <ul class="contacts-list">
                     <li>Kyiv, Ukraine</li>
                     <li>Email: d.mamalkov@gmail.com</li>
                     <li>Github:<a href="https://github.com/RicoDi">RicoDi</a></li>
@@ -39,8 +41,10 @@
                 </ul>
             </section>
             <section class="section" id="summary">
-                <h2 class="section-title">About me:</h2>
-                <p></p>
+               <article>
+                    <h2 class="section-title">About me:</h2>
+                    <p></p>
+                </article>
             </section>
             <section class="section" id="skills">
                 <h2 class="section-title">Skills</h2>
@@ -53,9 +57,39 @@
             </section>
             <section class="section" id="code">
                 <h2 class="section-title">Example of my code:</h2>
-                <pre>
+                <pre class="code-example">
                     <code>
-
+                        var location1 = 3;
+                        var location2 = 4;
+                        var location3 = 5;
+                        var guess
+                        var hits = 0;
+                        var guesses = 0;
+                        var isSunk = false;
+                        while (isSunk === false) {
+                            guess = prompt("Ready, aim, fire! (enter a number 0-6):");
+                            if (guess < 0 || guess > 6 ) {
+                                alert("Please enter a valid cell number!");
+                                }   else {
+                                guesses = guesses + 1;
+                        
+                                if (guesses === location1 || guesses === location2 || guesses === location3){
+                                    alert("HIT!")
+                                    hits = hits + 1;
+                        
+                                    if(hits == 3){
+                                        isSunk = true;
+                        
+                                        alert("You sunk my battleship!");
+                                    }
+                                } else {
+                                    alert("MISS!")
+                                }
+                            }
+                        }
+                        var stats = "You took" + guesses + "guesses to sink the battleship" +
+                            "which means your shooting accuracy was" + (3/guesses);
+                        alert(stats);
                     </code>
                 </pre>
             </section>
@@ -70,7 +104,7 @@
             <section class="section" id="projects">
                 <h2 class="section-title">My projects:</h2>
                 <ul>
-                    <li></li>
+                    <li><a href="">My</a></li>
                 </ul>
             </section>
             <section class="section" id="education">
@@ -84,7 +118,11 @@
         </div>
     </main>
     <footer>
-        <div class="container"></div>
+        <div class="container">
+            <a class="github" href="https://github.com/RicoDi">GitHub</a>
+            <p class="date">15.12.2022</p>
+            <a class="rsschool" href="">RSSchool</a>
+        </div>
     </footer>
 </body>
 </html>

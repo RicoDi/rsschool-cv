@@ -1,5 +1,6 @@
 *{
     box-sizing:border-box;
+    background-color: gainsboro;
 }
 html{
     scroll-behavior: smooth;
@@ -8,6 +9,7 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'Crimson Text', serif;
 }
 .container{
     max-width: 1440px;
@@ -15,7 +17,7 @@ body{
 }
 .nav-list{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
@@ -35,4 +37,14 @@ body{
     .section{
         width: 100%;
     }
+}
+.contacts-list{
+   list-style:square;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+}
+a.github{
+    align-items: flex-start;
 }
