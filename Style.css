@@ -1,6 +1,6 @@
 *{
     box-sizing:border-box;
-    background-color: gainsboro;
+
 }
 html{
     scroll-behavior: smooth;
@@ -14,6 +14,12 @@ body{
 .container{
     max-width: 1440px;
     margin: 0 auto;
+}
+header{
+    background-color: gainsboro;
+}
+main{
+    background-color: grey;
 }
 .nav-list{
     display:flex;
@@ -41,10 +47,30 @@ body{
 .contacts-list{
    list-style:square;
 }
-footer{
+footer div{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 a.github{
-    align-items: flex-start;
+
+}
+a.rsschool{
+
+}
+.section-profile-logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+section#profile{
+    display: flex;
+justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+
+}
+footer{
+    background-color: gainsboro;
 }
