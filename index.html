@@ -25,9 +25,10 @@
             </nav>   
         </div>
     </header>
-    <main class="main-container">
-        <div class="container">
+    <main class="main-container container">
+
             <section class="section" id="profile">
+                <img src="assets/Screenshot_1.png" alt class="section-profile-logo">
                 <h1 class="section-title">Malkov Dima</h1>
             </section>
             <section class="section" id="contacts">
@@ -52,44 +53,43 @@
                     <li>HTML&CSS Basic</li>
                     <li>JavaScript Basic</li>
                     <li>Git Basic</li>
-                    <li></li>
                 </ul>
             </section>
             <section class="section" id="code">
                 <h2 class="section-title">Example of my code:</h2>
                 <pre class="code-example">
                     <code>
-                        var location1 = 3;
-                        var location2 = 4;
-                        var location3 = 5;
-                        var guess
-                        var hits = 0;
-                        var guesses = 0;
-                        var isSunk = false;
-                        while (isSunk === false) {
-                            guess = prompt("Ready, aim, fire! (enter a number 0-6):");
-                            if (guess < 0 || guess > 6 ) {
-                                alert("Please enter a valid cell number!");
-                                }   else {
-                                guesses = guesses + 1;
-                        
-                                if (guesses === location1 || guesses === location2 || guesses === location3){
-                                    alert("HIT!")
-                                    hits = hits + 1;
-                        
-                                    if(hits == 3){
-                                        isSunk = true;
-                        
-                                        alert("You sunk my battleship!");
-                                    }
-                                } else {
-                                    alert("MISS!")
-                                }
-                            }
-                        }
-                        var stats = "You took" + guesses + "guesses to sink the battleship" +
-                            "which means your shooting accuracy was" + (3/guesses);
-                        alert(stats);
+    var location1 = 3;
+    var location2 = 4;
+    var location3 = 5;
+    var guess
+    var hits = 0;
+    var guesses = 0;
+    var isSunk = false;
+    while (isSunk === false) {
+        guess = prompt("Ready, aim, fire! (enter a number 0-6):");
+        if (guess < 0 || guess > 6 ) {
+            alert("Please enter a valid cell number!");
+            }   else {
+            guesses = guesses + 1;
+
+            if (guesses === location1 || guesses === location2 || guesses === location3){
+                alert("HIT!")
+                hits = hits + 1;
+
+                if(hits == 3){
+                    isSunk = true;
+
+                    alert("You sunk my battleship!");
+                }
+            } else {
+                alert("MISS!")
+            }
+        }
+    }
+    var stats = "You took" + guesses + "guesses to sink the battleship" +
+        "which means your shooting accuracy was" + (3/guesses);
+    alert(stats);
                     </code>
                 </pre>
             </section>
@@ -115,7 +115,7 @@
                 <h2 class="section-title">Languages:</h2>
                 <p>B1 - Pre-Intermediate</p>
             </section>
-        </div>
+
     </main>
     <footer>
         <div class="container">
