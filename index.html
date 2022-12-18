@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta>
+    <title>My CV</title>
+    <link rel="stylesheet" media="all" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">English</a></li>
+                </ul>
+            </nav>   
+        </div>
+    </header>
+    <main class="main-container container">
+
+            <section class="section" id="profile">
+                <img src="assets/Screenshot_1.png" alt class="section-profile-logo">
+                <h1 class="section-title">Malkov Dima</h1>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts:</h2>
+                <ul class="contacts-list">
+                    <li>Kyiv, Ukraine</li>
+                    <li>Email: d.mamalkov@gmail.com</li>
+                    <li>Github:<a href="https://github.com/RicoDi">RicoDi</a></li>
+                    <li>Telegram<a href="">#Mdimadimadima</a></li>
+                    <li>Discord:<a href="https://discord.com/channels/@me">RicoDi</a></li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+               <article>
+                    <h2 class="section-title">About me:</h2>
+                    <p>I am a beginner developer. I work for a hosting company. I want to study front-end, because I am very impressed with this profession.</p>
+                </article>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML&CSS Basic</li>
+                    <li>JavaScript Basic</li>
+                    <li>Git Basic</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Example of my code:</h2>
+                <pre class="code-example">
+                    <code>
+    var location1 = 3;
+    var location2 = 4;
+    var location3 = 5;
+    var guess
+    var hits = 0;
+    var guesses = 0;
+    var isSunk = false;
+    while (isSunk === false) {
+        guess = prompt("Ready, aim, fire! (enter a number 0-6):");
+        if (guess < 0 || guess > 6 ) {
+            alert("Please enter a valid cell number!");
+            }   else {
+            guesses = guesses + 1;
+
+            if (guesses === location1 || guesses === location2 || guesses === location3){
+                alert("HIT!")
+                hits = hits + 1;
+
+                if(hits == 3){
+                    isSunk = true;
+
+                    alert("You sunk my battleship!");
+                }
+            } else {
+                alert("MISS!")
+            }
+        }
+    }
+    var stats = "You took" + guesses + "guesses to sink the battleship" +
+        "which means your shooting accuracy was" + (3/guesses);
+    alert(stats);
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">My projects:</h2>
+                <ul>
+                    <li><a href="https://ricodi.github.io/rsschool-cv/cv">My CV</a></li>
+                </ul>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education:</h2>
+                <p>Kyiv National Linguestic University</p>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages:</h2>
+                <ul>
+									<li>English: Pre-intermediate</li>
+									<li>Ukrainian: Native</li>
+									<li>Russian: Fluent</li>
+								</ul>
+            </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <a class="github" href="https://github.com/RicoDi">GitHub</a>
+            <p class="date">2022</p>
+            <a class="rsschool" href="https://rs.school/js-stage0//">RSSchool</a>
+        </div>
+    </footer>
+</body>
+</html>
