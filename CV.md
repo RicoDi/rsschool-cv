@@ -7,7 +7,7 @@
 * Telegraf: @Mdimadimadima
 
 ### About me:
-Here some new information about me. I wanna be Front end developer
+Here some new information about me. I wanna be Front end developer. I want to learn, develop and grow.
 ### Skils:
 * HTML, CSS
 * JavaScript Basic
