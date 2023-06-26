@@ -4,6 +4,7 @@
 
 * Email: d.mamalkov@gmail.com
 * Phone number: +380992294145
+* Instagram: Dim_rico
 * Telegraf: @Mdimadimadima
 
 ### About me:
